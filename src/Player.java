@@ -1,5 +1,13 @@
 public class Player extends GameObject {
+
+    private AttackStrategy attackStrategy;
+
+    public void setAttackStrategy(AttackStrategy attackStrategy) {
+        this.attackStrategy = attackStrategy;
+    }
+
+    @Override
     public void update() {
-        System.out.println("Player moves, jumps and attacks.");
+        attackStrategy.attack();
     }
 }
