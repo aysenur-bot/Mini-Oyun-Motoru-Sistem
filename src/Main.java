@@ -1,12 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        GameObject player = GameObjectFactory.createObject("player");
-        GameObject poweredPlayer = new ShieldDecorator(player);
+        Player player = new Player();
 
-        GameObject adaptedEnemy = new EnemyAdapter();
+        player.setAttackStrategy(new MeleeAttack());
+        player.update();
 
-        poweredPlayer.update();
-        adaptedEnemy.update();
+        player.setAttackStrategy(new RangedAttack());
+        player.update();
+
+        GameEventSystem eventSystem = new GameEventSystem();
+        eventSystem.addObserver(new ScoreSystem());
+
+        eventSystem.notifyObservers("Enemy killed");
     }
 }
