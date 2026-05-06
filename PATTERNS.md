@@ -44,3 +44,6 @@ Player sınıfını değiştirmeden yeni özellikler eklenmesi gerekiyordu.
 - çalışma zamanı özellik genişletmesi
 - daha iyi esneklik
 - genişletmeye açık
+### Behavioral
+- Strateji: dinamik saldırı sistemi
+- Gözlemci: olay odaklı mimari
