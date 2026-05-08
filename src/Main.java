@@ -3,10 +3,10 @@ public class Main {
 
         Player player = new Player();
 
-        player.setAttackStrategy(new MeleeAttack());
+        player.setAttackStrategy(new RavexAttack());
         player.update();
 
-        player.setAttackStrategy(new RangedAttack());
+        player.setAttackStrategy(new VortexAttack());
         player.update();
 
         GameEventSystem eventSystem = new GameEventSystem();
