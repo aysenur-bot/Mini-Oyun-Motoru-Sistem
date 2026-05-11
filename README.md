@@ -26,6 +26,8 @@ Java'da tasarım kalıplarını gösteren basit bir oyun motoru.
 - Strateji: Oyuncu saldırı davranışı dinamik olarak değişir
 - Gözlemci: Oyun güncellemeleri için olay sistemi
 
+![Mini Game Engine UML](docs/ai-log/diagrams/Faz3.png)
+
 ## Nasıl Çalıştırılır
 ```bash
 javac src/*.java
